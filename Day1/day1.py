@@ -46,7 +46,7 @@ def main():
 
     list1, list2 = split_lists(lines)
 
-    # part1(list1, list2)
+    part1(list1, list2)
 
     part2(list1, list2)
 
