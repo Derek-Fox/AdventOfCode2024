@@ -92,14 +92,14 @@ class WordSearch:
         print(total)
 
 
-def get_input(file_name: str) -> list[list[str]]:
-    with open(file_name, 'r') as file:
+def get_input(filepath: str) -> list[list[str]]:
+    with open(filepath, 'r') as file:
         return [[c for c in line[:-1]] for line in file.readlines()]
 
 
 def main():
-    file_name = 'day4.in'
-    word_search = get_input(file_name)
+    filepath = 'day4.in'
+    word_search = get_input(filepath)
     ws = WordSearch(word_search)
     ws.part1()
     ws.part2()
